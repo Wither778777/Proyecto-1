@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Me perdonas? </title>
+    <style>
+       .body {
+        background-color: crimson;
+        text-align: center;
+
+       } 
+       .body__tittle {
+        color: black;
+       }
+    .body_img {
+        width: 2%;
+        border-radius: 70%;
+    };
+
+    </style>
+
+    </title>
+</head>
+<body class="body">
+ <h1 class="body__tittle">¿Me perdonas? 💔</h1>   
+ <img src="https://ih1.redbubble.net/image.5473556769.7071/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="hamster" class="body__img">
+
+ <button id="yes">Si 😊</button>
+ <button id="no">No 😭</button>
+
+ <script>
+    const vutonSi = document.getElementById('yes')
+    const vutonNo = document.getElementById('no')
+
+    const meperdonas = () => {
+    alert('❤️Gracias por perdonarme te quiero mucho Mayte');
+    alert('I love You');
+    location.href = 'https://www.youtube.com/watch?v=l5wj30L6hsE&ab_channel=Porta-Topic';
+
+    };
+    const evitarperdon = () => {
+        vutonNo.style.position = 'absolute';
+        vutonNo.style.top = (Math.random()* window.innerHeight) + 'px';
+        vutonNo.style.left = (Math.random()* window.innerWidth) + 'px';
+
+    };
+    vutonSi.addEventListener('click',meperdonas);
+    vutonNo.addEventListener('mouseover', evitarperdon);
+ </script>
+</body>
+</html>
